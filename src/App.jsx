@@ -1,21 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import PageContent from "./layout/PageContent";
-import HomePage from "./pages/HomePage";
+import "./index.css";
 
-function App() {
-  return (
-    <Router>
-      <Header />
-      <PageContent>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </PageContent>
-      <Footer />
-    </Router>
+export default function App() {
+  return React.createElement(
+    BrowserRouter,
+    null,
+    React.createElement(Header, null),
+    React.createElement(
+      PageContent,
+      null,
+      React.createElement(
+        Switch,
+        null,
+        React.createElement(Route, { exact: true, path: "/", component: HomePage })
+      )
+    ),
+    React.createElement(Footer, null)
   );
 }
-
-export default App;
