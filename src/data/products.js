@@ -10,55 +10,55 @@ import img8 from "../assets/products/8.jpg";
 const products = [
   {
     id: 1,
-    name: "Minimal Leather Wallet",
+    name: "AQUAGREY",
     price: 79,
     image: img1,
-    badge: "New"
+    badge: "TOP RATED"
   },
   {
     id: 2,
-    name: "Vintage Backpack",
+    name: "SILVER",
     price: 129,
     image: img2
   },
   {
     id: 3,
-    name: "Urban Travel Bag",
-    price: 159,
+    name: "ROBOTIC",
+    price: 49,
     image: img3,
     badge: "Sale"
   },
   {
     id: 4,
-    name: "Classic Messenger",
+    name: "COLUMN",
     price: 99,
     image: img4
   },
   {
     id: 5,
-    name: "Casual Sneakers",
+    name: "COAL",
     price: 89,
     image: img5
   },
   {
     id: 6,
-    name: "Leather Jacket",
+    name: "BUMBLEBEE",
     price: 199,
     image: img6,
-    badge: "New"
+    badge: "LICENSED"
   },
   {
     id: 7,
-    name: "Wool Scarf",
-    price: 49,
+    name: "BRONZE",
+    price: 99,
     image: img7
   },
   {
     id: 8,
-    name: "Denim Jeans",
-    price: 79,
+    name: "ARROW",
+    price: 99,
     image: img8,
-    badge: "Sale"
+    badge: "NEW"
   }
 ];
 

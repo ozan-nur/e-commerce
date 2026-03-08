@@ -7,6 +7,7 @@ import PageContent from "./layout/PageContent";
 import "./index.css";
 import ShopPage from "./pages/ShopPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return React.createElement(
@@ -21,7 +22,8 @@ export default function App() {
         null,
         React.createElement(Route, { exact: true, path: "/", component: HomePage }),
         React.createElement(Route, { path: "/shop", component: ShopPage }),
-        React.createElement(Route, { path: "/product/:id", component: ProductDetailPage })
+        React.createElement(Route, { path: "/product/:id", component: ProductDetailPage }),
+        React.createElement(Route, { path: "/contact", component: Contact })
       )
     ),
     React.createElement(Footer, null)
