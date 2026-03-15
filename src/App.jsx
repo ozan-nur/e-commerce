@@ -10,6 +10,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 import Contact from "./pages/Contact";
 import TeamPage from "./pages/TeamPage";
 import AboutPage from "./pages/AboutPage";
+import SignupPage from "./pages/SignupPage";
 
 export default function App() {
   return React.createElement(
@@ -27,7 +28,8 @@ export default function App() {
         React.createElement(Route, { path: "/product/:id", component: ProductDetailPage }),
         React.createElement(Route, { path: "/contact", component: Contact }),
         React.createElement(Route, { path: "/team", component: TeamPage }),
-        React.createElement(Route, { path: "/about", component: AboutPage })  
+        React.createElement(Route, { path: "/about", component: AboutPage }),
+        React.createElement(Route, { path: "/signup", component: SignupPage })
       )
     ),
     React.createElement(Footer, null)

@@ -52,6 +52,16 @@ export default function Header() {
             "px-4 py-2 rounded-lg bg-[#F5EBD9] text-[#6B4C3B] font-medium transition hover:bg-white hover:shadow",
         },
         "Contact"
+      ),
+
+      React.createElement(
+        Link,
+        {
+          to: "/signup",
+          className:
+            "px-4 py-2 rounded-lg bg-[#F5EBD9] text-[#6B4C3B] font-medium transition hover:bg-white hover:shadow",
+        },
+        "Sign Up"
       )
     )
   );

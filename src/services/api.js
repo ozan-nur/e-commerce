@@ -1,5 +1,7 @@
 import axios from "axios";
 
-export const api = axios.create({
-  baseURL: "https://api.example.com",
+const api = axios.create({
+  baseURL: "https://workintech-fe-ecommerce.onrender.com"
 });
+
+export default api;
